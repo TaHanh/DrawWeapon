@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Draw Weapons</string>
+    <string name="open">Draw Weapons</string>
+    <string name="close">Draw Weapons</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+</resources>
