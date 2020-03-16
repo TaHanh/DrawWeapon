@@ -1,32 +1,1535 @@
 [
+
   {
-    "code": "1kjhkg",
-    "name": "M34",
-    "avatar": "images/1/0.png",
+  "type": "AS",
+  "year": "1956",
+  "name": "M16",
+  "avatar": "images/1/0.png",
+  "images": [
+    "images/1/1.png",
+    "images/1/2.png",
+    "images/1/3.png",
+    "images/1/4.png",
+    "images/1/5.png",
+    "images/1/6.png",
+    "images/1/7.png"
+  ]
+},
+  {
+    "type": "AS",
+    "year": "1957",
+    "name": "M14",
+    "avatar": "images/2/0.png",
     "images": [
-      "http://microsoft.com",
-      "http://msn.com",
-      "http://hotmail.com"
+      "images/2/1.png",
+      "images/2/2.png",
+      "images/2/3.png",
+      "images/2/4.png",
+      "images/2/5.png",
+      "images/2/6.png",
+      "images/2/7.png"
     ]
   },
   {
-    "code": "123",
-    "name": "Microsoft",
-    "avatar": "Microsoft",
+    "type": "AS",
+    "year": "1962",
+    "name": "Stoner 63",
+    "avatar": "images/3/0.png",
     "images": [
-      "http://microsoft.com",
-      "http://msn.com",
-      "http://hotmail.com"
+      "images/3/1.png",
+      "images/3/2.png",
+      "images/3/3.png",
+      "images/3/4.png",
+      "images/3/5.png",
+      "images/3/6.png",
+      "images/3/7.png",
+      "images/3/8.png"
     ]
   },
   {
-    "code": "123 Microsoft",
-    "name": "M34",
-    "avatar": "Microsoft",
+    "type": "AS",
+    "year": "1963",
+    "name": "Armelite AR-18",
+    "avatar": "images/4/0.png",
     "images": [
-      "http://microsoft.com",
-      "http://msn.com",
-      "http://hotmail.com"
+      "images/4/1.png",
+      "images/4/2.png",
+      "images/4/3.png",
+      "images/4/4.png",
+      "images/4/5.png",
+      "images/4/6.png"
+
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1989",
+    "name": "AAI ACR",
+    "avatar": "images/5/0.png",
+    "images": [
+      "images/5/1.png",
+      "images/5/2.png",
+      "images/5/3.png",
+      "images/5/4.png",
+      "images/5/5.png",
+      "images/5/6.png",
+      "images/5/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1944",
+    "name": "AS 44",
+    "avatar": "images/6/0.png",
+    "images": [
+      "images/6/1.png",
+      "images/6/2.png",
+      "images/6/3.png",
+      "images/6/4.png",
+      "images/6/5.png",
+      "images/6/6.png",
+      "images/6/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1944",
+    "name": "AT 44",
+    "avatar": "images/7/0.png",
+    "images": [
+      "images/7/1.png",
+      "images/7/2.png",
+      "images/7/3.png",
+      "images/7/4.png",
+      "images/7/5.png",
+      "images/7/6.png",
+      "images/7/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1945",
+    "name": "Stoner 63",
+    "avatar": "images/8/0.png",
+    "images": [
+      "images/9/1.png",
+      "images/9/2.png",
+      "images/9/3.png",
+      "images/9/4.png",
+      "images/9/5.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1947",
+    "name": "AK 47",
+    "avatar": "images/10/0.png",
+    "images": [
+      "images/10/1.png",
+      "images/10/2.png",
+      "images/10/3.png",
+      "images/10/4.png",
+      "images/10/5.png",
+      "images/10/6.png",
+      "images/10/7.png",
+      "images/10/8.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1961",
+    "name": "TKB-022",
+    "avatar": "images/11/0.png",
+    "images": [
+      "images/11/1.png",
+      "images/11/2.png",
+      "images/11/3.png",
+      "images/11/4.png",
+      "images/11/5.png",
+      "images/11/6.png",
+      "images/11/7.png",
+      "images/11/8.png",
+      "images/11/9.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1916",
+    "name": "Fredorov assault rifle",
+    "avatar": "images/12/0.png",
+    "images": [
+      "images/12/1.png",
+      "images/12/2.png",
+      "images/12/3.png",
+      "images/12/4.png",
+      "images/12/5.png",
+      "images/12/6.png",
+      "images/12/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1990",
+    "name": "A-91",
+    "avatar": "images/13/0.png",
+    "images": [
+      "images/13/1.png",
+      "images/13/2.png",
+      "images/13/3.png",
+      "images/13/4.png",
+      "images/13/5.png",
+      "images/13/6.png",
+      "images/13/7.png",
+      "images/13/8.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1992",
+    "name": "9A91",
+    "avatar": "images/14/0.png",
+    "images": [
+      "images/14/1.png",
+      "images/14/2.png",
+      "images/14/3.png",
+      "images/14/4.png",
+      "images/14/5.png",
+      "images/14/6.png",
+      "images/14/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1993",
+    "name": "OTs-14 Groza",
+    "avatar": "images/15/0.png",
+    "images": [
+      "images/15/1.png",
+      "images/15/2.png",
+      "images/15/3.png",
+      "images/15/4.png",
+      "images/15/5.png",
+      "images/15/6.png",
+      "images/15/7.png",
+      "images/15/8.png",
+      "images/15/9.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1994",
+    "name": "SR-3",
+    "avatar": "images/16/0.png",
+    "images": [
+      "images/16/1.png",
+      "images/16/2.png",
+      "images/16/3.png",
+      "images/16/4.png",
+      "images/16/5.png",
+      "images/16/6.png",
+      "images/16/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "2003",
+    "name": "FN SCAR",
+    "avatar": "images/17/0.png",
+    "images": [
+      "images/17/1.png",
+      "images/17/2.png",
+      "images/17/3.png",
+      "images/17/4.png",
+      "images/17/5.png",
+      "images/17/6.png",
+      "images/17/7.png",
+      "images/17/8.png",
+      "images/17/9.png",
+      "images/17/10.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1977",
+    "name": "Steyr AUG",
+    "avatar": "images/18/0.png",
+    "images": [
+      "images/18/1.png",
+      "images/18/2.png",
+      "images/18/3.png",
+      "images/18/4.png",
+      "images/18/5.png",
+      "images/18/6.png",
+      "images/18/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1956",
+    "name": "Colt M4/M4A1",
+    "avatar": "images/19/0.png",
+    "images": [
+      "images/19/1.png",
+      "images/19/2.png",
+      "images/19/3.png",
+      "images/19/4.png",
+      "images/19/5.png",
+      "images/19/6.png",
+      "images/19/7.png",
+      "images/19/8.png",
+      "images/19/9.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "2009",
+    "name": "Baretta ARX-160",
+    "avatar": "images/20/0.png",
+    "images": [
+      "images/20/1.png",
+      "images/20/2.png",
+      "images/20/3.png",
+      "images/20/4.png",
+      "images/20/5.png",
+      "images/20/6.png",
+      "images/20/7.png",
+      "images/20/8.png",
+      "images/20/9.png",
+      "images/20/10.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1964",
+    "name": "Ingram Mac-10",
+    "avatar": "images/21/0.png",
+    "images": [
+      "images/21/1.png",
+      "images/21/2.png",
+      "images/21/3.png",
+      "images/21/4.png",
+      "images/21/5.png",
+      "images/21/6.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1964",
+    "name": "HK MP5",
+    "avatar": "images/22/0.png",
+    "images": [
+      "images/22/1.png",
+      "images/22/2.png",
+      "images/22/3.png",
+      "images/22/4.png",
+      "images/22/5.png",
+      "images/22/6.png",
+      "images/22/7.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1999",
+    "name": "HK UMP-45",
+    "avatar": "images/23/0.png",
+    "images": [
+      "images/23/1.png",
+      "images/23/2.png",
+      "images/23/3.png",
+      "images/23/4.png",
+      "images/23/5.png",
+      "images/23/6.png",
+      "images/23/7.png",
+      "images/23/8.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1988",
+    "name": "HK P90",
+    "avatar": "images/24/0.png",
+    "images": [
+      "images/24/1.png",
+      "images/24/2.png",
+      "images/24/3.png",
+      "images/24/4.png",
+      "images/24/5.png",
+      "images/24/6.png",
+      "images/24/7.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1989",
+    "name": "Steyr MP9",
+    "avatar": "images/25/0.png",
+    "images": [
+      "images/25/1.png",
+      "images/25/2.png",
+      "images/25/3.png",
+      "images/25/4.png",
+      "images/25/5.png",
+      "images/25/6.png",
+      "images/25/7.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "2001",
+    "name": "HK MP7",
+    "avatar": "images/26/0.png",
+    "images": [
+      "images/26/1.png",
+      "images/26/2.png",
+      "images/26/3.png",
+      "images/26/4.png",
+      "images/26/5.png",
+      "images/26/6.png",
+      "images/26/7.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "2006",
+    "name": "TDI KRISS Vector",
+    "avatar": "images/27/0.png",
+    "images": [
+      "images/27/1.png",
+      "images/27/2.png",
+      "images/27/3.png",
+      "images/27/4.png",
+      "images/27/5.png",
+      "images/27/6.png",
+      "images/27/7.png",
+      "images/27/8.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1948",
+    "name": "IMI Uzi",
+    "avatar": "images/28/0.png",
+    "images": [
+      "images/28/1.png",
+      "images/28/2.png",
+      "images/28/3.png",
+      "images/28/4.png",
+      "images/28/5.png",
+      "images/28/6.png",
+      "images/28/7.png",
+      "images/28/8.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Karambit",
+    "avatar": "images/29/0.png",
+    "images": [
+      "images/29/1.png",
+      "images/29/2.png",
+      "images/29/3.png",
+      "images/29/4.png",
+      "images/29/5.png",
+      "images/29/6.png",
+      "images/29/7.png",
+      "images/29/8.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Gut Knife",
+    "avatar": "images/30/0.png",
+    "images": [
+      "images/30/1.png",
+      "images/30/2.png",
+      "images/30/3.png",
+      "images/30/4.png",
+      "images/30/5.png",
+      "images/30/6.png",
+      "images/30/7.png",
+      "images/30/8.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Huntsman knife",
+    "avatar": "images/31/0.png",
+    "images": [
+      "images/31/1.png",
+      "images/31/2.png",
+      "images/31/3.png",
+      "images/31/4.png",
+      "images/31/5.png",
+      "images/31/6.png",
+      "images/31/7.png",
+      "images/31/8.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Butterfly knife",
+    "avatar": "images/32/0.png",
+    "images": [
+      "images/32/1.png",
+      "images/32/2.png",
+      "images/32/3.png",
+      "images/32/4.png",
+      "images/32/5.png",
+      "images/32/6.png",
+      "images/32/7.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Bayonet",
+    "avatar": "images/33/0.png",
+    "images": [
+      "images/33/1.png",
+      "images/33/2.png",
+      "images/33/3.png",
+      "images/33/4.png",
+      "images/33/5.png",
+      "images/33/6.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Shadow dagger",
+    "avatar": "images/34/0.png",
+    "images": [
+      "images/34/1.png",
+      "images/34/2.png",
+      "images/34/3.png",
+      "images/34/4.png",
+      "images/34/5.png",
+      "images/34/6.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Stiletto knife",
+    "avatar": "images/35/0.png",
+    "images": [
+      "images/35/1.png",
+      "images/35/2.png",
+      "images/35/3.png",
+      "images/35/4.png",
+      "images/35/5.png",
+      "images/35/6.png",
+      "images/35/7.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Huntsman knife",
+    "avatar": "images/36/0.png",
+    "images": [
+      "images/36/1.png",
+      "images/36/2.png",
+      "images/36/3.png",
+      "images/36/4.png",
+      "images/36/5.png",
+      "images/36/6.png",
+      "images/36/7.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1983",
+    "name": "Desert Eagle",
+    "avatar": "images/37/0.png",
+    "images": [
+      "images/37/1.png",
+      "images/37/2.png",
+      "images/37/3.png",
+      "images/37/4.png",
+      "images/37/5.png",
+      "images/37/6.png",
+      "images/37/7.png",
+      "images/37/8.png",
+      "images/37/9.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1989",
+    "name": "HK USP",
+    "avatar": "images/38/0.png",
+    "images": [
+      "images/38/1.png",
+      "images/38/2.png",
+      "images/38/3.png",
+      "images/38/4.png",
+      "images/38/5.png",
+      "images/38/6.png",
+      "images/38/7.png",
+      "images/38/8.png",
+      "images/38/9.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1987",
+    "name": "Glock 17/18",
+    "avatar": "images/39/0.png",
+    "images": [
+      "images/39/1.png",
+      "images/39/2.png",
+      "images/39/3.png",
+      "images/39/4.png",
+      "images/39/5.png",
+      "images/39/6.png",
+      "images/39/7.png",
+      "images/39/8.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "2000",
+    "name": "FN Five Seven",
+    "avatar": "images/40/0.png",
+    "images": [
+      "images/40/1.png",
+      "images/40/2.png",
+      "images/40/3.png",
+      "images/40/4.png",
+      "images/40/5.png",
+      "images/40/6.png",
+      "images/40/7.png",
+      "images/40/8.png",
+      "images/40/9.png",
+      "images/40/10.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1963",
+    "name": "SVD",
+    "avatar": "images/41/0.png",
+    "images": [
+      "images/41/1.png",
+      "images/41/2.png",
+      "images/41/3.png",
+      "images/41/4.png",
+      "images/41/5.png",
+      "images/41/6.png",
+      "images/41/7.png",
+      "images/41/8.png",
+      "images/41/9.png",
+      "images/41/10.png",
+      "images/41/11.png",
+      "images/41/12.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1982",
+    "name": "AWP/AWM",
+    "avatar": "images/42/0.png",
+    "images": [
+      "images/42/1.png",
+      "images/42/2.png",
+      "images/42/3.png",
+      "images/42/4.png",
+      "images/42/5.png",
+      "images/42/6.png",
+      "images/42/7.png",
+      "images/42/8.png",
+      "images/42/9.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1987",
+    "name": "VSS Vintorez",
+    "avatar": "images/43/0.png",
+    "images": [
+      "images/43/1.png",
+      "images/43/2.png",
+      "images/43/3.png",
+      "images/43/4.png",
+      "images/43/5.png",
+      "images/43/6.png",
+      "images/43/7.png",
+      "images/43/8.png",
+      "images/43/9.png",
+      "images/43/10.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1990",
+    "name": "Steyr Scout",
+    "avatar": "images/44/0.png",
+    "images": [
+      "images/44/1.png",
+      "images/44/2.png",
+      "images/44/3.png",
+      "images/44/4.png",
+      "images/44/5.png",
+      "images/44/6.png",
+      "images/44/7.png",
+      "images/44/8.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1999",
+    "name": "Benelli Nova",
+    "avatar": "images/45/0.png",
+    "images": [
+      "images/45/1.png",
+      "images/45/2.png",
+      "images/45/3.png",
+      "images/45/4.png",
+      "images/45/5.png",
+      "images/45/6.png",
+      "images/45/7.png",
+      "images/45/8.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1998",
+    "name": "Benelli M4/M1014",
+    "avatar": "images/46/0.png",
+    "images": [
+      "images/46/1.png",
+      "images/46/2.png",
+      "images/46/3.png",
+      "images/46/4.png",
+      "images/46/5.png",
+      "images/46/6.png",
+      "images/46/7.png",
+      "images/46/8.png",
+      "images/46/9.png",
+      "images/46/10.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1993",
+    "name": "MC 255 12",
+    "avatar": "images/47/0.png",
+    "images": [
+      "images/47/1.png",
+      "images/47/2.png",
+      "images/47/3.png",
+      "images/47/4.png",
+      "images/47/5.png",
+      "images/47/6.png",
+      "images/47/7.png",
+      "images/47/8.png",
+      "images/47/9.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1979",
+    "name": "Franchi SPAS 12",
+    "avatar": "images/48/0.png",
+    "images": [
+      "images/48/1.png",
+      "images/48/2.png",
+      "images/48/3.png",
+      "images/48/4.png",
+      "images/48/5.png",
+      "images/48/6.png",
+      "images/48/7.png",
+      "images/48/8.png",
+      "images/48/9.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1935",
+    "name": "Kar98k/Mauser 98k",
+    "avatar": "images/49/0.png",
+    "images": [
+      "images/49/1.png",
+      "images/49/2.png",
+      "images/49/3.png",
+      "images/49/4.png",
+      "images/49/5.png",
+      "images/49/6.png",
+      "images/49/7.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1891",
+    "name": "Mosin Nagant",
+    "avatar": "images/50/0.png",
+    "images": [
+      "images/50/1.png",
+      "images/50/2.png",
+      "images/50/3.png",
+      "images/50/4.png",
+      "images/50/5.png",
+      "images/50/6.png",
+      "images/50/7.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1873",
+    "name": "Winchester M1873",
+    "avatar": "images/51/0.png",
+    "images": [
+      "images/51/1.png",
+      "images/51/2.png",
+      "images/51/3.png",
+      "images/51/4.png",
+      "images/51/5.png",
+      "images/51/6.png",
+      "images/51/7.png",
+      "images/51/8.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1885",
+    "name": "Lebel M1886",
+    "avatar": "images/52/0.png",
+    "images": [
+      "images/52/1.png",
+      "images/52/2.png",
+      "images/52/3.png",
+      "images/52/4.png",
+      "images/52/5.png",
+      "images/52/6.png",
+      "images/52/7.png",
+      "images/52/8.png"
+    ]
+  },
+  {
+    "type": "Revolver",
+    "year": "2006",
+    "name": "S&W M&P R8",
+    "avatar": "images/53/0.png",
+    "images": [
+      "images/53/1.png",
+      "images/53/2.png",
+      "images/53/3.png",
+      "images/53/4.png",
+      "images/53/5.png",
+      "images/53/6.png",
+      "images/53/7.png",
+      "images/53/8.png",
+      "images/53/9.png",
+      "images/53/10.png"
+    ]
+  },
+  {
+    "type": "Revolver",
+    "year": "1895",
+    "name": "Nagant M1895",
+    "avatar": "images/54/0.png",
+    "images": [
+      "images/54/1.png",
+      "images/54/2.png",
+      "images/54/3.png",
+      "images/54/4.png",
+      "images/54/5.png",
+      "images/54/6.png",
+      "images/54/7.png",
+      "images/54/8.png",
+      "images/54/9.png"
+    ]
+  },
+  {
+    "type": "Revolver",
+    "year": "1955",
+    "name": "Colt Python",
+    "avatar": "images/55/0.png",
+    "images": [
+      "images/55/1.png",
+      "images/55/2.png",
+      "images/55/3.png",
+      "images/55/4.png",
+      "images/55/5.png",
+      "images/55/6.png",
+      "images/55/7.png",
+      "images/55/8.png"
+    ]
+  },
+  {
+    "type": "Revolver",
+    "year": "2009",
+    "name": "Chiappa Rhino",
+    "avatar": "images/56/0.png",
+    "images": [
+      "images/56/1.png",
+      "images/56/2.png",
+      "images/56/3.png",
+      "images/56/4.png",
+      "images/56/5.png",
+      "images/56/6.png",
+      "images/56/7.png",
+      "images/56/8.png",
+      "images/56/9.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Kukri",
+    "avatar": "images/57/0.png",
+    "images": [
+      "images/57/1.png",
+      "images/57/2.png",
+      "images/57/3.png",
+      "images/57/4.png",
+      "images/57/5.png",
+      "images/57/6.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Katana",
+    "avatar": "images/58/0.png",
+    "images": [
+      "images/58/1.png",
+      "images/58/2.png",
+      "images/58/3.png",
+      "images/58/4.png",
+      "images/58/5.png"
+    ]
+  },
+  {
+    "type": "AntiTank",
+    "year": "1958",
+    "name": "RPG-7",
+    "avatar": "images/59/0.png",
+    "images": [
+      "images/59/1.png",
+      "images/59/2.png",
+      "images/59/3.png",
+      "images/59/4.png",
+      "images/59/5.png",
+      "images/59/6.png",
+      "images/59/7.png",
+      "images/59/8.png"
+    ]
+  },
+  {
+    "type": "AntiTank",
+    "year": "1994",
+    "name": "GM-94",
+    "avatar": "images/60/0.png",
+    "images": [
+      "images/60/1.png",
+      "images/60/2.png",
+      "images/60/3.png",
+      "images/60/4.png",
+      "images/60/5.png",
+      "images/60/6.png",
+      "images/60/7.png",
+      "images/60/8.png"
+    ]
+  },
+  {
+    "type": "AntiTank",
+    "year": "1963",
+    "name": "M72 LAW",
+    "avatar": "images/61/0.png",
+    "images": [
+      "images/61/1.png",
+      "images/61/2.png",
+      "images/61/3.png",
+      "images/61/4.png",
+      "images/61/5.png",
+      "images/61/6.png"
+    ]
+  },
+  {
+    "type": "AntiTank",
+    "year": "1960",
+    "name": "M79",
+    "avatar": "images/62/0.png",
+    "images": [
+      "images/62/1.png",
+      "images/62/2.png",
+      "images/62/3.png",
+      "images/62/4.png",
+      "images/62/5.png",
+      "images/62/6.png"
+    ]
+  },
+  {
+    "type": "LMG",
+    "year": "1995",
+    "name": "IMI Negev",
+    "avatar": "images/63/0.png",
+    "images": [
+      "images/63/1.png",
+      "images/63/2.png",
+      "images/63/3.png",
+      "images/63/4.png",
+      "images/63/5.png",
+      "images/63/6.png",
+      "images/63/7.png",
+      "images/63/8.png",
+      "images/63/9.png",
+      "images/63/10.png",
+      "images/63/11.png"
+    ]
+  },
+  {
+    "type": "LMG",
+    "year": "1942",
+    "name": "MG 42",
+    "avatar": "images/64/0.png",
+    "images": [
+      "images/64/1.png",
+      "images/64/2.png",
+      "images/64/3.png",
+      "images/64/4.png",
+      "images/64/5.png",
+      "images/64/6.png",
+      "images/64/7.png",
+      "images/64/8.png"
+    ]
+  },
+  {
+    "type": "LMG",
+    "year": "1960",
+    "name": "M134 Minigun",
+    "avatar": "images/65/0.png",
+    "images": [
+      "images/65/1.png",
+      "images/65/2.png",
+      "images/65/3.png",
+      "images/65/4.png",
+      "images/65/5.png",
+      "images/65/6.png",
+      "images/65/7.png",
+      "images/65/8.png",
+      "images/65/9.png",
+      "images/65/10.png",
+      "images/65/11.png"
+    ]
+  },
+  {
+    "type": "LMG",
+    "year": "1961",
+    "name": "PK",
+    "avatar": "images/66/0.png",
+    "images": [
+      "images/66/1.png",
+      "images/66/2.png",
+      "images/66/3.png",
+      "images/66/4.png",
+      "images/66/5.png",
+      "images/66/6.png",
+      "images/66/7.png",
+      "images/66/8.png",
+      "images/66/9.png"
+    ]
+  },
+  {
+    "type": "Grenade",
+    "year": "1980",
+    "name": "M84",
+    "avatar": "images/67/0.png",
+    "images": [
+      "images/67/1.png",
+      "images/67/2.png",
+      "images/67/3.png",
+      "images/67/4.png",
+      "images/67/5.png",
+      "images/67/6.png"
+    ]
+  },
+  {
+    "type": "Grenade",
+    "year": "1960",
+    "name": "M67",
+    "avatar": "images/68/0.png",
+    "images": [
+      "images/68/1.png",
+      "images/68/2.png",
+      "images/68/3.png",
+      "images/68/4.png",
+      "images/68/5.png",
+      "images/68/6.png"
+    ]
+  },
+  {
+    "type": "Grenade",
+    "year": "1960",
+    "name": "M26",
+    "avatar": "images/69/0.png",
+    "images": [
+      "images/69/1.png",
+      "images/69/2.png",
+      "images/69/3.png",
+      "images/69/4.png",
+      "images/69/5.png"
+    ]
+  },
+
+  {
+    "type": "Grenade",
+    "year": "1942",
+    "name": "M18",
+    "avatar": "images/70/0.png",
+    "images": [
+      "images/70/1.png",
+      "images/70/2.png",
+      "images/70/3.png",
+      "images/70/4.png",
+      "images/70/5.png"
+    ]
+  },
+  {
+    "type": "Other",
+    "year": "",
+    "name": "Pepper spray",
+    "avatar": "images/74/0.png",
+    "images": [
+      "images/74/1.png",
+      "images/74/2.png",
+      "images/74/3.png",
+      "images/74/4.png"
+    ]
+  },
+  {
+    "type": "Other",
+    "year": "",
+    "name": "Composite bow",
+    "avatar": "images/72/0.png",
+    "images": [
+      "images/72/1.png",
+      "images/72/2.png",
+      "images/72/3.png",
+      "images/72/4.png",
+      "images/72/5.png"
+    ]
+  },
+  {
+    "type": "Other",
+    "year": "",
+    "name": "Flare gun",
+    "avatar": "images/73/0.png",
+    "images": [
+      "images/73/1.png",
+      "images/73/2.png",
+      "images/73/3.png",
+      "images/73/4.png",
+      "images/73/5.png",
+      "images/73/6.png"
+    ]
+  },
+  {
+    "type": "Other",
+    "year": "",
+    "name": "Flamethrower",
+    "avatar": "images/71/0.png",
+    "images": [
+      "images/71/1.png",
+      "images/71/2.png",
+      "images/71/3.png",
+      "images/71/4.png",
+      "images/71/5.png",
+      "images/71/6.png",
+      "images/71/7.png",
+      "images/71/8.png",
+      "images/71/9.png",
+      "images/71/10.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1911",
+    "name": "Colt M1911",
+    "avatar": "images/75/0.png",
+    "images": [
+      "images/75/1.png",
+      "images/75/2.png",
+      "images/75/3.png",
+      "images/75/4.png",
+      "images/75/5.png",
+      "images/75/6.png",
+      "images/75/7.png",
+      "images/75/8.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1948",
+    "name": "Makarov",
+    "avatar": "images/76/0.png",
+    "images": [
+      "images/76/1.png",
+      "images/76/2.png",
+      "images/76/3.png",
+      "images/76/4.png",
+      "images/76/5.png",
+      "images/76/6.png",
+      "images/76/7.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1930",
+    "name": "TT",
+    "avatar": "images/77/0.png",
+    "images": [
+      "images/77/1.png",
+      "images/77/2.png",
+      "images/77/3.png",
+      "images/77/4.png",
+      "images/77/5.png",
+      "images/77/6.png",
+      "images/77/7.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1898",
+    "name": "Luger P08",
+    "avatar": "images/78/0.png",
+    "images": [
+      "images/78/1.png",
+      "images/78/2.png",
+      "images/78/3.png",
+      "images/78/4.png",
+      "images/78/5.png",
+      "images/78/6.png",
+      "images/78/7.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Navaja",
+    "avatar": "images/79/0.png",
+    "images": [
+      "images/79/1.png",
+      "images/79/2.png",
+      "images/79/3.png",
+      "images/79/4.png",
+      "images/79/5.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Ursus Knife",
+    "avatar": "images/80/0.png",
+    "images": [
+      "images/80/1.png",
+      "images/80/2.png",
+      "images/80/3.png",
+      "images/80/4.png",
+      "images/80/5.png",
+      "images/80/6.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Gladius",
+    "avatar": "images/81/0.png",
+    "images": [
+      "images/81/1.png",
+      "images/81/2.png",
+      "images/81/3.png",
+      "images/81/4.png",
+      "images/81/5.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Knightly Sword",
+    "avatar": "images/82/0.png",
+    "images": [
+      "images/82/1.png",
+      "images/82/2.png",
+      "images/82/3.png",
+      "images/82/4.png",
+      "images/82/5.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Sabre",
+    "avatar": "images/83/0.png",
+    "images": [
+      "images/83/1.png",
+      "images/83/2.png",
+      "images/83/3.png",
+      "images/83/4.png",
+      "images/83/5.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Machete",
+    "avatar": "images/84/0.png",
+    "images": [
+      "images/84/1.png",
+      "images/84/2.png",
+      "images/84/3.png",
+      "images/84/4.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Recondo IV",
+    "avatar": "images/85/0.png",
+    "images": [
+      "images/85/1.png",
+      "images/85/2.png",
+      "images/85/3.png",
+      "images/85/4.png",
+      "images/85/5.png",
+      "images/85/6.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Persian Knife",
+    "avatar": "images/86/0.png",
+    "images": [
+      "images/86/1.png",
+      "images/86/2.png",
+      "images/86/3.png",
+      "images/86/4.png",
+      "images/86/5.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Badlands Bowie",
+    "avatar": "images/87/0.png",
+    "images": [
+      "images/87/1.png",
+      "images/87/2.png",
+      "images/87/3.png",
+      "images/87/4.png",
+      "images/87/5.png",
+      "images/87/6.png"
+    ]
+  },
+  {
+    "type": "Melee",
+    "year": "",
+    "name": "Manticuda",
+    "avatar": "images/88/0.png",
+    "images": [
+      "images/88/1.png",
+      "images/88/2.png",
+      "images/88/3.png",
+      "images/88/4.png",
+      "images/88/5.png",
+      "images/88/6.png",
+      "images/88/7.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1997",
+    "name": "Saiga-12",
+    "avatar": "images/89/0.png",
+    "images": [
+      "images/89/1.png",
+      "images/89/2.png",
+      "images/89/3.png",
+      "images/89/4.png",
+      "images/89/5.png",
+      "images/89/6.png",
+      "images/89/7.png",
+      "images/89/8.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1897",
+    "name": "Winchester M1897",
+    "avatar": "images/90/0.png",
+    "images": [
+      "images/90/1.png",
+      "images/90/2.png",
+      "images/90/3.png",
+      "images/90/4.png",
+      "images/90/5.png",
+      "images/90/6.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1950",
+    "name": "Baretta Silver Pigeon",
+    "avatar": "images/91/0.png",
+    "images": [
+      "images/91/1.png",
+      "images/91/2.png",
+      "images/91/3.png",
+      "images/91/4.png",
+      "images/91/5.png",
+      "images/91/6.png",
+      "images/91/7.png"
+    ]
+  },
+  {
+    "type": "SG",
+    "year": "1972",
+    "name": "AA-12",
+    "avatar": "images/92/0.png",
+    "images": [
+      "images/92/1.png",
+      "images/92/2.png",
+      "images/92/3.png",
+      "images/92/4.png",
+      "images/92/5.png",
+      "images/92/6.png"
+    ]
+  },
+  {
+    "type": "Pistols",
+    "year": "1985",
+    "name": "Tec-9",
+    "avatar": "images/93/0.png",
+    "images": [
+      "images/93/1.png",
+      "images/93/2.png",
+      "images/93/3.png",
+      "images/93/4.png",
+      "images/93/5.png",
+      "images/93/6.png",
+      "images/93/7.png"
+    ]
+  },
+  {
+    "type": "SMG",
+    "year": "1918",
+    "name": "Thompson M1A1",
+    "avatar": "images/94/0.png",
+    "images": [
+      "images/94/1.png",
+      "images/94/2.png",
+      "images/94/3.png",
+      "images/94/4.png",
+      "images/94/5.png",
+      "images/94/6.png",
+      "images/94/7.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1971",
+    "name": "FAMAS",
+    "avatar": "images/95/0.png",
+    "images": [
+      "images/95/1.png",
+      "images/95/2.png",
+      "images/95/3.png",
+      "images/95/4.png",
+      "images/95/5.png",
+      "images/95/6.png",
+      "images/95/7.png",
+      "images/95/8.png"
+    ]
+  },
+  {
+    "type": "AS",
+    "year": "1980",
+    "name": "AS Val",
+    "avatar": "images/96/0.png",
+    "images": [
+      "images/96/1.png",
+      "images/96/2.png",
+      "images/96/3.png",
+      "images/96/4.png",
+      "images/96/5.png",
+      "images/96/6.png",
+      "images/96/7.png",
+      "images/96/8.png",
+      "images/96/9.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "1980",
+    "name": "Barrett M82",
+    "avatar": "images/97/0.png",
+    "images": [
+      "images/97/1.png",
+      "images/97/2.png",
+      "images/97/3.png",
+      "images/97/4.png",
+      "images/97/5.png",
+      "images/97/6.png",
+      "images/97/7.png",
+      "images/97/8.png"
+    ]
+  },
+  {
+    "type": "SR",
+    "year": "2001",
+    "name": "CheyTac M200",
+    "avatar": "images/98/0.png",
+    "images": [
+      "images/98/1.png",
+      "images/98/2.png",
+      "images/98/3.png",
+      "images/98/4.png",
+      "images/98/5.png",
+      "images/98/6.png",
+      "images/98/7.png",
+      "images/98/8.png",
+      "images/98/9.png",
+      "images/98/10.png"
+    ]
+  },
+  {
+    "type": "Revolver",
+    "year": "2003",
+    "name": "S&W Model 500 Magnum",
+    "avatar": "images/99/0.png",
+    "images": [
+      "images/99/1.png",
+      "images/99/2.png",
+      "images/99/3.png",
+      "images/99/4.png",
+      "images/99/5.png",
+      "images/99/6.png",
+      "images/99/7.png",
+      "images/99/8.png"
+    ]
+  },
+  {
+    "type": "Revolver",
+    "year": "2000",
+    "name": "RSh-12",
+    "avatar": "images/100/0.png",
+    "images": [
+      "images/100/1.png",
+      "images/100/2.png",
+      "images/100/3.png",
+      "images/100/4.png",
+      "images/100/5.png",
+      "images/100/6.png",
+      "images/100/7.png",
+      "images/100/8.png",
+      "images/100/9.png"
     ]
   }
 ]

@@ -22,6 +22,8 @@ import android.widget.TextView;
 import android.widget.Toolbar;
 
 import com.draw.weapons.adapter.DataAdapter;
+import com.draw.weapons.adapter.NavDataAdapter;
+import com.draw.weapons.modal.Nav;
 import com.draw.weapons.modal.Weapon;
 import com.draw.weapons.modal.Weapon2;
 import com.google.android.material.navigation.NavigationView;
@@ -36,6 +38,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ArrayList<Weapon> weaponsList;
@@ -67,14 +70,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(layoutManager);
 
-        DataAdapter adapter = new DataAdapter(getApplicationContext(), createData());
+        DataAdapter adapter = new DataAdapter(getApplicationContext(), createData("a"));
         recyclerView.setAdapter(adapter);
     }
 
     private void initDrawerView() {
         drawerLayout = findViewById(R.id.my_drawer);
         navigationView = findViewById(R.id.nav_view);
-//        textView = findViewById(R.id.textView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.listNav);
+        recyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 1);
+        recyclerView.setLayoutManager(layoutManager);
+
+        ArrayList<Nav> list = new ArrayList<Nav>();
+        list.add(new Nav("1","icon/1.png"));
+        list.add(new Nav("1","icon/2.png"));
+        list.add(new Nav("1","icon/3.png"));
+        list.add(new Nav("1","icon/4.png"));
+        list.add(new Nav("1","icon/5.png"));
+        list.add(new Nav("1","icon/6.png"));
+        list.add(new Nav("1","icon/7.png"));
+        list.add(new Nav("1","icon/8.png"));
+        list.add(new Nav("1","icon/10.png"));
+
+        NavDataAdapter adapter = new NavDataAdapter(getApplicationContext(), list);
+        recyclerView.setAdapter(adapter);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -89,13 +109,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    ArrayList createData() {
+    ArrayList createData(String category) {
         weaponsList = new ArrayList<Weapon>();
-        ArrayList<String> imas = new ArrayList<String>();
-
-        weaponsList.add(new Weapon("po", "pok", "plk", imas));
-        weaponsList.add(new Weapon("po", "pok", "plk", imas));
-        weaponsList.add(new Weapon("po", "pok", "plk", imas));
+        ArrayList list = new ArrayList<Weapon>();
 
         Type type = new  TypeToken<ArrayList<Weapon>>(){}.getType();
 //        Weapon2 demo = new Gson().fromJson("data", Weapon2.class);
@@ -104,7 +120,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 //        ArrayList<Weapon> list = new ArrayList<Weapon>();
 //        list = data;
-        return data;
+        switch (category){
+            case "a" :
+                list = data;
+                break;
+            case "b" :
+//                list = data.subList(0, 1);
+                break;
+        }
+        return list;
     }
 
     public String getStringFromJson() {

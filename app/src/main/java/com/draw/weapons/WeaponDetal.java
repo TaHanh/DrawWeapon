@@ -1,10 +1,12 @@
 package com.draw.weapons;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,10 +27,13 @@ public class WeaponDetal extends AppCompatActivity implements View.OnClickListen
     private static String TAG = "WeaponDetal";
     ActionBar actionBar;
     EditText title, content;
-    ImageView btnBack, imageWeapon, btnPrev, btnNext;
+    ImageView btnBack, imageWeapon, btnPrev, btnNext, btnTurn;
     TextView index;
     Intent intent;
     Weapon weapon;
+    int indexNow = 0;
+    boolean isFlip= false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,17 +46,21 @@ public class WeaponDetal extends AppCompatActivity implements View.OnClickListen
         weapon = (Weapon) intent.getSerializableExtra("data");
         Log.d(TAG, "onCreate: " + weapon.toString());
         index = findViewById(R.id.index);
-//        index.setText(idx + "/" + total);
+        index.setText("1/" + weapon.getImages().size());
 
         imageWeapon = findViewById(R.id.image_weapon);
-        imageWeapon.setImageBitmap(getBitmapFromAsset(this, "images/1/1.png"));
+        imageWeapon.setImageBitmap(getBitmapFromAsset(this, weapon.getImages().get(indexNow)));
 
 
         btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(this);
 
+        btnTurn = findViewById(R.id.btnTurn);
+        btnTurn.setOnClickListener(this);
+
         btnPrev = findViewById(R.id.arrow_left);
         btnPrev.setOnClickListener(this);
+        btnPrev.setVisibility(View.INVISIBLE);
 
         btnNext = findViewById(R.id.arrow_right);
         btnNext.setOnClickListener(this);
@@ -65,17 +74,76 @@ public class WeaponDetal extends AppCompatActivity implements View.OnClickListen
                 onBackPressed();
                 break;
             case R.id.arrow_right:
-                imageWeapon.setImageBitmap(getBitmapFromAsset(this, "images/1/2.png"));
+
+                if (this.indexNow < weapon.getImages().size() - 1) {
+                    this.indexNow = this.indexNow + 1;
+                    index.setText((this.indexNow + 1) + "/" + weapon.getImages().size());
+                    imageWeapon.setImageBitmap(getBitmapFromAsset(this, weapon.getImages().get(indexNow)));
+                }
+                if (this.indexNow < weapon.getImages().size() - 1) {
+                    btnNext.setVisibility(View.VISIBLE);
+                    btnPrev.setVisibility(View.VISIBLE);
+                } else {
+                    btnNext.setVisibility(View.INVISIBLE);
+                }
                 break;
             case R.id.arrow_left:
-                imageWeapon.setImageBitmap(getBitmapFromAsset(this, "images/1/0.png"));
-                break;
 
+                if (this.indexNow > 0) {
+                    btnNext.setVisibility(View.VISIBLE);
+                    btnPrev.setVisibility(View.VISIBLE);
+                    this.indexNow = this.indexNow - 1;
+                    index.setText((this.indexNow + 1) + "/" + weapon.getImages().size());
+                    imageWeapon.setImageBitmap(getBitmapFromAsset(this, weapon.getImages().get(indexNow)));
+                }
+                if (this.indexNow > 0) {
+                    btnNext.setVisibility(View.VISIBLE);
+                    btnPrev.setVisibility(View.VISIBLE);
+//                    btnPrev.setAlpha(255);
+                } else {
+                    btnPrev.setVisibility(View.INVISIBLE);
+//                    btnPrev.setAlpha(50);
+                }
+                break;
+            case R.id.btnTurn :
+                this.isFlip = !this.isFlip;
+                flipIt(imageWeapon);
+                break;
             default:
                 break;
         }
     }
+    private void flipIt(final View viewToFlip) {
+        ObjectAnimator flip;
+        if(this.isFlip) {
+             flip = ObjectAnimator.ofFloat(viewToFlip, "rotationY", 0f, 180);
+        } else {
+             flip = ObjectAnimator.ofFloat(viewToFlip, "rotationY", 0f, 0);
+        }
+        flip.setDuration(1000);
+        flip.start();
 
+    }
+//    public Bitmap flipImage(Bitmap src, int type) {
+//        // create new matrix for transformation
+//        Matrix matrix = new Matrix();
+//        // if vertical
+//        if(type == 1) {
+//            // y = y * -1
+//            matrix.preScale(1.0f, -1.0f);
+//        }
+//        // if horizonal
+//        else if(type == 2) {
+//            // x = x * -1
+//            matrix.preScale(-1.0f, 1.0f);
+//            // unknown type
+//        } else {
+//            return null;
+//        }
+//
+//        // return transformed image
+//        return Bitmap.createBitmap(src, 0, 0, src.getWidth(), src.getHeight(), matrix, true);
+//    }
     public static Bitmap getBitmapFromAsset(Context context, String filePath) {
         AssetManager assetManager = context.getAssets();
 

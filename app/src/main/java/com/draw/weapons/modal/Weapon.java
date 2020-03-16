@@ -8,9 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Weapon implements Serializable {
-    @SerializedName("code")
+    @SerializedName("type")
     @Expose
-    private String code;
+    private String type;
+    @SerializedName("year")
+    @Expose
+    private String year;
     @SerializedName("name")
     @Expose
     private String name;
@@ -21,19 +24,29 @@ public class Weapon implements Serializable {
     @Expose
     private List<String> images = null;
 
-    public Weapon(String code, String name, String avatar, ArrayList<String> images){
-        this.code = code;
+
+    public Weapon(String type, String year, String name, String avatar, ArrayList<String> images) {
+        this.type = type;
+        this.year = year;
         this.name = name;
         this.avatar = avatar;
         this.images = images;
     }
 
-    public String getCode() {
-        return code;
+    public String getYear() {
+        return year;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getName() {
@@ -63,7 +76,7 @@ public class Weapon implements Serializable {
     @Override
     public String toString() {
         return "Weapon{" +
-                "code='" + code + '\'' +
+                "year='" + year + '\'' +
                 ", name='" + name + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", images=" + images.size() +

@@ -5,34 +5,32 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.draw.weapons.MainActivity;
 import com.draw.weapons.R;
 import com.draw.weapons.WeaponDetal;
+import com.draw.weapons.modal.Nav;
 import com.draw.weapons.modal.Weapon;
-import com.draw.weapons.modal.Weapon2;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> implements View.OnClickListener {
-    private ArrayList<Weapon> weapons;
+public class NavDataAdapter extends RecyclerView.Adapter<NavDataAdapter.ViewHolder> implements View.OnClickListener {
+    private ArrayList<Nav> list;
     private Context context;
     private static AdapterView.OnItemClickListener listener;
 
-    public DataAdapter(Context context, ArrayList<Weapon> weapons) {
-        this.weapons = weapons;
+    public NavDataAdapter(Context context, ArrayList<Nav> list) {
+        this.list = list;
         this.context = context;
     }
 
@@ -41,44 +39,35 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView name, year;
-        ImageView imgView;
+        ImageView imageNav;
         public ViewHolder(View view) {
             super(view);
             context = view.getContext();
-            name = view.findViewById(R.id.name);
-            imgView = view.findViewById(R.id.avatar);
-            year = view.findViewById(R.id.code);
+            imageNav = view.findViewById(R.id.imageNav);
         }
     }
 
 
     @Override
-    public DataAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_weapon, viewGroup, false);
+    public NavDataAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_nav, viewGroup, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(DataAdapter.ViewHolder viewHolder, final int i) {
-        viewHolder.name.setText(weapons.get(i).getName());
-        viewHolder.imgView.setImageBitmap(getBitmapFromAsset(viewHolder.itemView.getContext(), weapons.get(i).getAvatar()));
-        viewHolder.year.setText(weapons.get(i).getYear());
+    public void onBindViewHolder(NavDataAdapter.ViewHolder viewHolder, final int i) {
+        viewHolder.imageNav.setImageBitmap(getBitmapFromAsset(viewHolder.itemView.getContext(), list.get(i).getImage()));
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitymoi = new Intent(context, WeaponDetal.class);
-//                activitymoi.putExtra("INDEX", i);
-//                activitymoi.putExtra("TOTAL", getItemCount());
-                activitymoi.putExtra("data", weapons.get(i));
-                context.startActivity(activitymoi);
+
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return weapons.size();
+        return list.size();
     }
 
 
