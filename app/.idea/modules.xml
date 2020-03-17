@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Draw Weapons.iml" filepath="$PROJECT_DIR$/../Draw Weapons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../DrawWeapon-Draw Weapons.iml" filepath="$PROJECT_DIR$/../DrawWeapon-Draw Weapons.iml" group="Draw Weapons" />
-      <module fileurl="file://$PROJECT_DIR$/DrawWeapon-app.iml" filepath="$PROJECT_DIR$/DrawWeapon-app.iml" group="Draw Weapons/app" />
       <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
     </modules>
   </component>

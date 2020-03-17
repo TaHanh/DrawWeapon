@@ -116,34 +116,15 @@ public class WeaponDetal extends AppCompatActivity implements View.OnClickListen
     private void flipIt(final View viewToFlip) {
         ObjectAnimator flip;
         if(this.isFlip) {
-             flip = ObjectAnimator.ofFloat(viewToFlip, "rotationY", 0f, 180);
+            flip = ObjectAnimator.ofFloat(viewToFlip, "rotationY", 0f, 180);
         } else {
-             flip = ObjectAnimator.ofFloat(viewToFlip, "rotationY", 0f, 0);
+            flip = ObjectAnimator.ofFloat(viewToFlip, "rotationY", 0f, 0);
         }
         flip.setDuration(1000);
         flip.start();
 
     }
-//    public Bitmap flipImage(Bitmap src, int type) {
-//        // create new matrix for transformation
-//        Matrix matrix = new Matrix();
-//        // if vertical
-//        if(type == 1) {
-//            // y = y * -1
-//            matrix.preScale(1.0f, -1.0f);
-//        }
-//        // if horizonal
-//        else if(type == 2) {
-//            // x = x * -1
-//            matrix.preScale(-1.0f, 1.0f);
-//            // unknown type
-//        } else {
-//            return null;
-//        }
-//
-//        // return transformed image
-//        return Bitmap.createBitmap(src, 0, 0, src.getWidth(), src.getHeight(), matrix, true);
-//    }
+
     public static Bitmap getBitmapFromAsset(Context context, String filePath) {
         AssetManager assetManager = context.getAssets();
 

@@ -5,22 +5,18 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.draw.weapons.MainActivity;
 import com.draw.weapons.R;
 import com.draw.weapons.WeaponDetal;
 import com.draw.weapons.modal.Weapon;
-import com.draw.weapons.modal.Weapon2;
 
 import java.io.IOException;
 import java.io.InputStream;

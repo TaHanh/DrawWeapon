@@ -6,6 +6,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Weapon implements Serializable {
     @SerializedName("type")
@@ -31,6 +32,10 @@ public class Weapon implements Serializable {
         this.name = name;
         this.avatar = avatar;
         this.images = images;
+    }
+
+    public Weapon(String type) {
+        this.type = type;
     }
 
     public String getYear() {
@@ -81,5 +86,13 @@ public class Weapon implements Serializable {
                 ", avatar='" + avatar + '\'' +
                 ", images=" + images.size() +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Weapon weapon = (Weapon) o;
+        return Objects.equals(this.type, weapon.type);
     }
 }
