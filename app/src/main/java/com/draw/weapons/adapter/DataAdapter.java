@@ -26,6 +26,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
     private ArrayList<Weapon> weapons;
     private Context context;
     private static AdapterView.OnItemClickListener listener;
+    private DataAdapter.OnItemClick onItemClick;
 
     public DataAdapter(Context context, ArrayList<Weapon> weapons) {
         this.weapons = weapons;
@@ -34,6 +35,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
 
     @Override
     public void onClick(View v) {
+    }
+
+    public void setOnItemClick(OnItemClick onItemClick) {
+        this.onItemClick = onItemClick;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -56,20 +61,29 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
     }
 
     @Override
-    public void onBindViewHolder(DataAdapter.ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(final DataAdapter.ViewHolder viewHolder, final int i) {
         viewHolder.name.setText(weapons.get(i).getName());
         viewHolder.imgView.setImageBitmap(getBitmapFromAsset(viewHolder.itemView.getContext(), weapons.get(i).getAvatar()));
         viewHolder.year.setText(weapons.get(i).getYear());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitymoi = new Intent(context, WeaponDetal.class);
-//                activitymoi.putExtra("INDEX", i);
-//                activitymoi.putExtra("TOTAL", getItemCount());
-                activitymoi.putExtra("data", weapons.get(i));
-                context.startActivity(activitymoi);
+
+                if (onItemClick != null) {
+                    onItemClick.onClickItem(i);
+
+                }
             }
         });
+
+//        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent activitymoi = new Intent(context, WeaponDetal.class);
+//                activitymoi.putExtra("data", weapons.get(i));
+//                context.startActivity(activitymoi);
+//            }
+//        });
     }
 
     @Override
@@ -89,5 +103,8 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
             // handle exception
         }
         return bitmap;
+    }
+    public interface OnItemClick {
+        void onClickItem(int position);
     }
 }

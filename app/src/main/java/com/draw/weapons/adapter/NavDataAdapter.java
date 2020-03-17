@@ -21,18 +21,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.draw.weapons.R;
 import com.draw.weapons.modal.Nav;
+import com.draw.weapons.modal.Nav2;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
 public class NavDataAdapter extends RecyclerView.Adapter<NavDataAdapter.ViewHolder> implements View.OnClickListener {
-    private ArrayList<Nav> list;
+    private ArrayList<Nav2> list;
     private Context context;
     private OnItemClick onItemClick;
     private String TAG = "NavDataAdapter";
     ImageView imgNav;
-    public NavDataAdapter(Context context, ArrayList<Nav> list) {
+
+    public NavDataAdapter(Context context, ArrayList<Nav2> list) {
         this.list = list;
         this.context = context;
     }
@@ -67,15 +69,16 @@ public class NavDataAdapter extends RecyclerView.Adapter<NavDataAdapter.ViewHold
     @Override
     public void onBindViewHolder(final NavDataAdapter.ViewHolder viewHolder, final int i) {
         viewHolder.imageNav.setImageBitmap(getBitmapFromAsset(viewHolder.itemView.getContext(), list.get(i).getImage()));
+        if (list.get(i).isSelected()) {
+            viewHolder.layoutImageNav.setBackgroundResource(R.drawable.item_selected_nav_style);
+        } else {
+            viewHolder.layoutImageNav.setBackgroundResource(R.drawable.item_nav_style);
+        }
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(onItemClick!= null)
-                {
+                if (onItemClick != null) {
                     onItemClick.onClickItem(i);
-//                    viewHolder.layoutImageNav.setBackgroundColor(Color.parseColor("#ffffff"));
-//                    ShapeDrawable background = viewHolder.imageNav.getBackground();
-//                    background.setColor(Color.BLACK);
 
                 }
             }
@@ -100,7 +103,8 @@ public class NavDataAdapter extends RecyclerView.Adapter<NavDataAdapter.ViewHold
         }
         return bitmap;
     }
-    public interface OnItemClick{
+
+    public interface OnItemClick {
         void onClickItem(int position);
     }
 }

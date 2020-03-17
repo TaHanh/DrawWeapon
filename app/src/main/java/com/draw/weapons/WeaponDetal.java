@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.draw.weapons.modal.Weapon;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,16 +42,18 @@ public class WeaponDetal extends AppCompatActivity implements View.OnClickListen
     Weapon weapon;
     int indexNow = 0;
     boolean isFlip= false;
+    AdView mAdView;
+    private InterstitialAd mInterstitialAd;
+    FrameLayout frmAds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("", "value value");
         setContentView(R.layout.weapon_detail);
         getSupportActionBar().hide();
+        initAds();
+
         intent = getIntent();
-//        String idx = getIntent().getStringExtra("INDEX");
-//        String total = getIntent().getStringExtra("TOTAL");
         weapon = (Weapon) intent.getSerializableExtra("data");
         Log.d(TAG, "onCreate: " + weapon.toString());
         index = findViewById(R.id.index);
@@ -65,6 +76,66 @@ public class WeaponDetal extends AppCompatActivity implements View.OnClickListen
         btnNext = findViewById(R.id.arrow_right);
         btnNext.setOnClickListener(this);
     }
+
+    private void initAds() {
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(getString(R.string.inter_id));
+        mInterstitialAd.setAdListener(new AdListener(){
+            @Override
+            public void onAdClosed() {
+                super.onAdClosed();
+            }
+
+            @Override
+            public void onAdFailedToLoad(int i) {
+                super.onAdFailedToLoad(i);
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+                super.onAdLeftApplication();
+            }
+
+            @Override
+            public void onAdOpened() {
+                super.onAdOpened();
+            }
+
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mInterstitialAd.show();
+            }
+
+            @Override
+            public void onAdClicked() {
+                super.onAdClicked();
+            }
+
+            @Override
+            public void onAdImpression() {
+                super.onAdImpression();
+            }
+        });
+
+
+
+        frmAds = findViewById(R.id.frmAds);
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.LARGE_BANNER);
+        adView.setAdUnitId(getString(R.string.banner_id));
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        frmAds.addView(adView);
+
+
+    }
+
 
     @Override
     public void onClick(View v) {

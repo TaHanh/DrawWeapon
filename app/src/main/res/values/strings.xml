@@ -2,9 +2,7 @@
     <string name="app_name">Draw Weapons</string>
     <string name="open">Draw Weapons</string>
     <string name="close">Draw Weapons</string>
-    <string-array name="navigation_drawer_items_array">
-        <item>Connect</item>
-        <item>Fixtures</item>
-        <item>Table</item>
-    </string-array>
+    <string name="app_ads_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="inter_id">ca-app-pub-3940256099942544/1033173712</string>
 </resources>

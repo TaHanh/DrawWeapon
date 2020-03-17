@@ -13,29 +13,87 @@
         android:id="@+id/content_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#EEEEEE"
-            android:orientation="vertical"
-            tools:context=".MainActivity">
-
-            <include
-                layout="@layout/appbar"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/listWeapons"
+            android:layout_height="match_parent">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="5dp" />
+                android:background="#EEEEEE"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
 
-        </LinearLayout>
+                <include
+                    layout="@layout/appbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
 
+                <!--            <LinearLayout-->
+                <!--                android:orientation="vertical"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent">-->
+
+                <!--                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+                <!--                    android:id="@+id/adView"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentBottom="true"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    ads:adSize="BANNER"-->
+                <!--                    ads:adUnitId="@string/banner_id" />-->
+
+
+
+
+
+                <!--            </LinearLayout>-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listWeapons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+                <FrameLayout
+                    android:id="@+id/frmAds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:background="#50000000"
+                android:visibility="gone"
+                android:id="@+id/relativeLoaing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="20dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/progress"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:indeterminateTint="@color/colorPrimaryDark"
+                        />
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:text="Loadding..." />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
     </FrameLayout>
     <!--    app:menu="@menu/nav"-->
     <com.google.android.material.navigation.NavigationView
@@ -43,8 +101,8 @@
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
         android:background="#50000000"
+        android:fitsSystemWindows="true"
         android:gravity="center_horizontal">
 
         <androidx.recyclerview.widget.RecyclerView

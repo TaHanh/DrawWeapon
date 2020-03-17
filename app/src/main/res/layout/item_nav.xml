@@ -10,11 +10,9 @@
     android:id="@+id/layout_image_nav"
     >
     <ImageView
-        android:background="@xml/item_nav_style"
         android:id="@+id/imageNav"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:padding="15dp"
+        android:padding="20dp"
         />
-
 </LinearLayout>
