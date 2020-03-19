@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.draw.weapons.R;
 import com.draw.weapons.WeaponDetal;
 import com.draw.weapons.modal.Weapon;
+import com.draw.weapons.utils.CommonUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -63,15 +64,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
     @Override
     public void onBindViewHolder(final DataAdapter.ViewHolder viewHolder, final int i) {
         viewHolder.name.setText(weapons.get(i).getName());
-        viewHolder.imgView.setImageBitmap(getBitmapFromAsset(viewHolder.itemView.getContext(), weapons.get(i).getAvatar()));
+        viewHolder.imgView.setImageBitmap(CommonUtils.getBitmapFromAsset(viewHolder.itemView.getContext(), weapons.get(i).getAvatar()));
         viewHolder.year.setText(weapons.get(i).getYear());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (onItemClick != null) {
                     onItemClick.onClickItem(i);
-
                 }
             }
         });
@@ -92,18 +91,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
     }
 
 
-    public static Bitmap getBitmapFromAsset(Context context, String filePath) {
-        AssetManager assetManager = context.getAssets();
-        InputStream istr;
-        Bitmap bitmap = null;
-        try {
-            istr = assetManager.open(filePath);
-            bitmap = BitmapFactory.decodeStream(istr);
-        } catch (IOException e) {
-            // handle exception
-        }
-        return bitmap;
-    }
+
     public interface OnItemClick {
         void onClickItem(int position);
     }

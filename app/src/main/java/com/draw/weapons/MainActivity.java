@@ -218,8 +218,6 @@ void intentActivity() {
                     list.get(position).setImage("icon/00.png");
                 }
                 adapter.notifyDataSetChanged();
-//                AdRequest adRequestss  = new AdRequest.Builder().build();
-//                mInterstitialAd.loadAd(adRequestss);
             }
         };
         adapter.setOnItemClick(adapterItemClick);
@@ -314,15 +312,4 @@ void intentActivity() {
         return sb.toString();
     }
 
-    public void addListenerOnButton() {
-        try {
-            AssetManager assetManager = getAssets();
-            InputStream is = assetManager.open("images/1/0.png");
-            Bitmap bitmap = BitmapFactory.decodeStream(is);
-            image = (ImageView) findViewById(R.id.avatar);
-            image.setImageBitmap(bitmap);
-        } catch (IOException e) {
-        }
-
-    }
 }

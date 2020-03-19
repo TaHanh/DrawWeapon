@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.draw.weapons.R;
 import com.draw.weapons.modal.Nav;
 import com.draw.weapons.modal.Nav2;
+import com.draw.weapons.utils.CommonUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -68,7 +69,7 @@ public class NavDataAdapter extends RecyclerView.Adapter<NavDataAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(final NavDataAdapter.ViewHolder viewHolder, final int i) {
-        viewHolder.imageNav.setImageBitmap(getBitmapFromAsset(viewHolder.itemView.getContext(), list.get(i).getImage()));
+        viewHolder.imageNav.setImageBitmap(CommonUtils.getBitmapFromAsset(viewHolder.itemView.getContext(), list.get(i).getImage()));
         if (list.get(i).isSelected()) {
             viewHolder.layoutImageNav.setBackgroundResource(R.drawable.item_selected_nav_style);
         } else {
@@ -91,18 +92,6 @@ public class NavDataAdapter extends RecyclerView.Adapter<NavDataAdapter.ViewHold
     }
 
 
-    public static Bitmap getBitmapFromAsset(Context context, String filePath) {
-        AssetManager assetManager = context.getAssets();
-        InputStream istr;
-        Bitmap bitmap = null;
-        try {
-            istr = assetManager.open(filePath);
-            bitmap = BitmapFactory.decodeStream(istr);
-        } catch (IOException e) {
-            // handle exception
-        }
-        return bitmap;
-    }
 
     public interface OnItemClick {
         void onClickItem(int position);
